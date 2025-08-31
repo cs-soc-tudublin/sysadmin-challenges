@@ -29,6 +29,9 @@ You also need to SSH with the SSH Key you created and sent to me.
 Don't forget the MOTD instructions!
 
 # 2. Running the Container on the VM
+Any services we develop have a GitHub action to build the container and push it to the GitHub Container Registry. 
+You will see the container needed for this challenge in the Packages section of this repo.
+
 We store all the services we use in `/src`.
 
 We use Docker Compose when running Docker containers as they're easily backed up and updated.
