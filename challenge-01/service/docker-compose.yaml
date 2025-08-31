@@ -1,0 +1,9 @@
+# Service Owner: BitFlip
+
+services:
+  web:
+    image: ghcr.io/cs-soc-tudublin/challenge-01:latest
+    container_name: 'sample-web'
+    ports:
+      - "8080:80"
+    restart: unless-stopped
