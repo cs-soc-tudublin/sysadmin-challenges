@@ -1,4 +1,4 @@
-# **CHALLENGE 01**  - Docker and NGINX
+# **CHALLENGE 01**  - As It Is
 
 Currently, CS++ runs every service as a [Docker](https://www.docker.com/) container on a VM.
 Docker is the leading Containerisation platform, and is also quite simple.
@@ -27,6 +27,8 @@ This was shown and practiced at Sysadmin training.
 As a reminder, we have a VM Template on `Muscovy`.
 You also need to SSH with the SSH Key you created and sent to me.
 Don't forget the MOTD instructions!
+
+This will be your VM for most of these challenges. Keep it around after you're finished this one.
 
 # 2. Running the Container on the VM
 Any services we develop have a GitHub action to build the container and push it to the GitHub Container Registry. 
