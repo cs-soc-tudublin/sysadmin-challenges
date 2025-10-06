@@ -22,6 +22,14 @@ If you get stuck, you can always ask for help!
 Don't forget to write up your process as you go, as this will be submitted at the end of the challenge.
 You can include additional notes where relevant, as well as where you got stuck and how you solved it.
 
+## Services Needed:
+- Proxmox
+- Docker
+- SSH
+- VIM / Nano
+- Certbot
+- NGINX
+
 # 1. Creating the VM
 This was shown and practiced at Sysadmin training.
 As a reminder, we have a VM Template on `Muscovy`.
@@ -58,16 +66,11 @@ Assuming the service is running and available on the VM, you now need to make Go
 We store all NGINX config files in `/etc/nginx/sites-available`, with sub directories for each society, club, or purpose.
 At the root of the `/etc/nginx/sites-available` directory are 2 templates, a redirect template and a reverse proxy template.
 
-## Redirect Template
-These allow you to set a domain, and then set what domain to redirect to.
-We use that for `constitution.cspp.ie`, which redirects to our Google Doc with the constitution.
-
-## Reverse Proxy Template
-This 'proxies' the request from Golem to a certain port on a certain IP.
-
-Choose the one you think is correct and add it to the CSPP directory.
-Make the edits, ideally setting the subdomain to `challenge-01.[yourname]`
+Choose the one you think is correct and add it to the CSPP directory. Expl
+Make the edits, ideally setting the subdomain to `challenge-01.[yourname].cspp.ie`
 Using symbolic links, link your new config file to `/etc/nginx/sites-enabled`.
 Test the NGINX confiogs and then run certbot to generate a new certificate for your new subdomain.
+You will need to look up how to do this.
 
-This should make the site available on the internet! You can check by going to `challenge-01.[yourname].cspp.ie` in a web browser.
+# Completion Criteria
+Challenge 01 available at `challenge-01.[your name].cspp.ie`

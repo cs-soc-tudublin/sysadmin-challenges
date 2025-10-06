@@ -13,6 +13,19 @@ Your task is to create a dockerfile and docker compose file. Build the container
 4. Run and make routable
 5. Size optimisations
 
+## Services Used
+- Proxmox
+- Docker
+- GitHub
+- SSH
+- VS Code
+- VIM / Nano
+- Certbot
+- NGINX
+
+## Notes
+You will want to pull the challenge files onto your staging VM, and work on it through that.
+
 # 1. Create the Dockerfile
 Docker containers need a `Dockerfile` to build a container image.
 Everything CS++ develops has its own Dockerfile. These can be used as inspiration.
@@ -36,3 +49,11 @@ Smaller images also tend to use less resources.
 
 Some of the best optimisations include using a small base image and using `.dockerignore`, but there are many other ways to optimise size.
 I was able to get this container as low as **XXX**Mb. This does not mean it is as small as it can get, as there are some optimisations that make it harder to use, but have a much smaller footprint
+
+# 6. UH OH! Wrench in the Works!
+To successfully complete this challenge, you need to have **BOTH** Challenge 1 *and* Challenge 2 running and routable.
+To do this you'll need a Reverse Proxy on your Staging VM. At CS++ we tend to use Traefik for containers. You can see how we use it on `Huey`, and the Traefik Docs are really good too.
+
+# Completion Criteria
+Challenge 1 Site available: `challenge-01.[your name].cspp.ie`
+Challenge 2 Site available: `challenge-02.[your name].cspp.ie`

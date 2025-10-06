@@ -11,13 +11,24 @@ Your task is to set up a simple CI/CD pipeline with GitHub actions and with `Wat
 3. Set up Watchtower
 4. Testing your pipeline
 
+## Notes
+You will want to have Challenges 1 and 2 running and routable.
+
+## Services Used
+- Proxmox
+- Docker
+- GitHub
+- SSH
+- VIM / Nano
+
+
 # 1. Create the GitHub Action
 GitHub has it's own 'Container Registry' where built container images can be hosted publicly or privately.
 You can use GitHub Actions to automate building a container image and pushing it to the GitHub Container Registry (GHCR)
 
 We do this in CS++ for everything we develop in-house. Most likely, the premade action does everything you need!
 
-Create a new repo, put your work from Challenge 2 in it and get started on GitHub Actions!
+Create a new repo on YOUR account, put your work from Challenge 2 in it and get started on GitHub Actions!
 
 # 2. Set Up the Container on the VM
 Identical to Challenges 1 & 2. Using the docker compose, make it publicly routable too!
@@ -33,3 +44,8 @@ We have it running on `Huey`, you can use its compose as your inspiration.
 Assuming you have everything set up correctly. Make a change to your code on the Repo and wait a few minutes for it to be built & pulled to your container.
 
 If all goes well, it should update when you visit the URL!
+
+# Completion Criteria
+Docker Compose uses GHCR Link
+Updating the Repo will cause an automatic update to the hosted service
+Service is publicly routable
