@@ -12,6 +12,7 @@ This goal is split into 4 sections:
 2. Running the container on the VM
 3. Making the container available to Golem
 4. Making Golem proxy to the container
+5. Setting the DNS
 
 ## Notes
 Each high-level goal has a heading on the rest of this file.
@@ -29,10 +30,11 @@ You can include additional notes where relevant, as well as where you got stuck 
 - VIM / Nano
 - Certbot
 - NGINX
+- CloudFlare
 
 # 1. Creating the VM
 This was shown and practiced at Sysadmin training.
-As a reminder, we have a VM Template on `Muscovy`.
+As a reminder, a VM Template exists on one of our hosts (Mallard, Pancakes, etc.).
 You also need to SSH with the SSH Key you created and sent to me.
 Don't forget the MOTD instructions!
 
@@ -71,6 +73,9 @@ Make the edits, ideally setting the subdomain to `challenge-01.[yourname].cspp.i
 Using symbolic links, link your new config file to `/etc/nginx/sites-enabled`.
 Test the NGINX confiogs and then run certbot to generate a new certificate for your new subdomain.
 You will need to look up how to do this.
+
+# 5. Setting the DNS
+We use CloudFlare for our DNS. You will need to log in (password in the Password Manager) and add your DNS entry here.
 
 # Completion Criteria
 Challenge 01 available at `challenge-01.[your name].cspp.ie`
