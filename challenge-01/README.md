@@ -38,7 +38,7 @@ As a reminder, a VM Template exists on one of our hosts (Mallard, Pancakes, etc.
 You also need to SSH with the SSH Key you created and sent to me.
 Don't forget the MOTD instructions!
 
-This will be your VM for most of these challenges. Keep it around after you're finished this one.
+This will be your VM for most of these challenges. Keep it around after you're finished this one. It should be a **FULL CLONE**
 
 # 2. Running the Container on the VM
 Any services we develop have a GitHub action to build the container and push it to the GitHub Container Registry. 
