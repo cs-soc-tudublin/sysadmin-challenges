@@ -7,10 +7,12 @@ This means that no matter the year or course, all sysadmins have common experien
 # Structure
 
 ## Repo Structure
+
 Each challenge is in its own folder, with a `README.md` file that contains the instructions for the challenge.
 These challenges may contain other files required for the challenge itself.
 
 ## Challenge Structure
+
 The Challenge README contains the following:
 
 **Opening Text:**
@@ -34,9 +36,11 @@ Exactly what should be available / complete to complete the challenge.
 This is what will be checked to ensure it is done correctly.
 
 # Licensing
+
 Like all other CS++ work, these challenges are licensed under the [GNU GPL V3.0 License](./LICENSE.md).
 
 # Contributing
+
 As our technical stack evolves, so will our challenges.
 Our challenges may also be modified as issues with its content are identified.
 
